@@ -18,13 +18,13 @@ team to create Markdown-based documentation of a command-line program that exist
 \section*{Configuring Git and Bitbucket}
 
 During this laboratory assignment and subsequent assignments, we will securely communicate with the Bitbucket.org
-servers that will host all of our projects.  In this laboratory assignment, we will perform all of the steps to configure
-the accounts on the departmental servers and the Bitbucket service.  Throughout the assignment, you should refer to the
-following Web site for additional information: \url{https://confluence.atlassian.com/display/BITBUCKET/Bitbucket+101}.
-As you will be required to use Git in the remaining laboratory and laboratory assignments and during the class sessions,
-please be sure to keep a record of all of the steps that you complete and the challenges that you face.  You are also
-responsible for working with a partner to ensure that each of you is able to successfully complete each of the steps
-outlined in this assignment.
+servers that will host all of our projects.  In this laboratory assignment, we will perform all of the steps to
+configure the accounts on the departmental servers and the Bitbucket service.  Throughout the assignment, you should
+refer to the following Web site for additional information:
+\url{https://confluence.atlassian.com/display/BITBUCKET/Bitbucket+101}.  As you will be required to use Git in the
+remaining laboratory assignments and during the class sessions, please be sure to keep a record of all of the steps that
+you complete and the challenges that you face.  You are also responsible for working with your team to ensure that
+everyone is able to successfully complete each of the steps outlined in this assignment.
 
 \begin{enumerate}
 
@@ -50,7 +50,7 @@ outlined in this assignment.
     course's Git repository with you.  Open a terminal window on your workstation and change into the directory where
     you will store your files for this course.  For instance, by opening a terminal window and typing the command ``{\tt
     mkdir cs280F2015}'' you could make a {\tt cs280F2015/} directory that will contain the Git repository that the
-    instructor will always use to share files with you.  Once you have done so, please type the following command 
+    instructor will always use to share files with you.  Once you have done so, please type the following command
     ``{\tt git clone git@bitbucket.org:gkapfham/cs280f2015-share.git}''.
 
     If everything worked correctly, you should be able to download all of the files that you will need for this
@@ -59,7 +59,7 @@ outlined in this assignment.
       clone}'', then please see the course instructor.
 
   \item Using your terminal window, you should browse the files that are in this Git repository.  In particular, please
-    look in the {\tt cs280f2015-share/laboratorys/laboratory01/} directory and use {\tt gvim} to study the Java program that
+    look in the {\tt cs280f2015-share/labs/lab01/} directory and use {\tt gvim} to study the Java program that
     you find.  Remember, the ``{\tt cd}'' command allows you to change into a directory. So, you could type the following
     commands to go to the directory that contains today's Java program; make sure you fully understand these steps!
 
@@ -68,30 +68,22 @@ outlined in this assignment.
         cd cs280F2015
         cd cs280f2015-share
         ls
-        cd laboratorys
+        cd labs
         ls
-        cd laboratory01
+        cd lab01
         ls
     \end{verbatim}
     \vspace*{-.5in}
 
     \end{enumerate}
 
-    Congratulations on completing these steps to access the {\tt cs112S2015-share} repository that we will use
-    throughout the semester! Please make sure that, before you finish this laboratory assignment, you are sure that you
-    are correctly connected to this version control repository. Students who cannot easily access this repository will
-    risk falling behind during the semester as the course instructor will use this means of code delivery during all of
-    the remaining class, laboratory, and laboratory sessions. If you are struggling with this step or the next one, then
-    don't get frustrated---these tasks are difficult and thus often requiring repeated attempts on your part. Ask for
-    help if you need it!
+\section*{Creating a New Personal Repository}
 
-\section*{Creating a New Repository}
-
-Now that you have learned how to clone an existing Git repository, you should make a new repository in the {\tt
-cs280F2015/} directory that you previously created.  First, make a new directory called {\tt cs280F2015-<your user
-name>} using the ``{\tt mkdir}'' command in your terminal window. If you opened a new terminal, then you could type the
-following commands to create the needed directory; again, make sure that you understand each of these steps, discussing
-them with your neighbor, a teaching assistant, a departmental tutor, or the course instructor if you are confused.
+Now that you have cloned an existing Git repository, you should make a new repository in the {\tt cs280F2015/} directory
+that you previously created.  First, make a new directory called {\tt cs280F2015-<your user name>} using the ``{\tt
+mkdir}'' command in your terminal window. If you opened a new terminal, then you could type the following commands to
+create the needed directory; again, make sure that you understand each of these steps, discussing them with your
+neighbor, a teaching assistant, a departmental tutor, or the course instructor if you are confused.
 
     % \vspace*{-.1in}
     \begin{verbatim}
