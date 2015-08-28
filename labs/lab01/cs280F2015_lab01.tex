@@ -4,7 +4,7 @@
 
 \begin{document}
 \MYTITLE{Laboratory Assignment One: Version Control with Git and Bitbucket}
-\MYHEADERS{Laboratory Assignment One}{Due: August 28, 2015}
+\MYHEADERS{Laboratory Assignment One}{Due: September 4, 2015}
 
 \section*{Introduction}
 
@@ -39,9 +39,9 @@ everyone is able to successfully complete each of the steps outlined in this ass
     passphrase if you do).   Type {\tt man ssh-keygen} and talk with your partner to learn more about this program.
     What files does {\tt ssh-keygen} produce?  Where does this program store these files by default?
 
-    Once you and your partner have created your ssh keys, you should raise your hand to invite either a teaching
-    assistant or the course instructor to help you with the next steps. First, you must log into Bitbucket and look in the
-    right corner for an account avatar with a down arrow.  Click on this blue link and then select the ``Manage
+    Once you and your team have created your ssh keys, you should raise your hand to invite either a teaching
+    assistant or the course instructor to help you with the next steps. First, you must log into Bitbucket and look in
+    the right corner for an account avatar with a down arrow.  Click on this blue link and then select the ``Manage
     account'' option. Now, scroll down until you found the ``SSH keys'' option and upload your ssh key to Bitbucket. You
     can copy your SSH key by going to the terminal and typing ``{\tt cat \textasciitilde{}/.ssh/id\_rsa.pub}'' command.
 
@@ -157,7 +157,56 @@ plugin available from \url{https://github.com/tpope/vim-fugitive} to support the
 repository through the Vim text editor. Students who are using other text editors to modify the existing Markdown files
 can look for similar plugins or use the {\tt git} program in the terminal window.
 
-\section*{Documenting an Ubuntu Command-Line Program}
+\section*{Documenting Command-Line Programs}
 
+Section 1.3 of your textbook poses the question ``What is good software?''\ and then explains different ways in which
+this question can be answered. For the Unix and Linux operating systems, there are a wide variety of command-line
+programs that people have been using for decades. While some may argue that these tools do not evidence the
+characteristics of high-quality software, others claim that they are exceptional and thus use them regularly. For the
+final part of this laboratory assignment, you and you team members will develop your own understanding of the word
+``quality'' as it applies to computer software. With a particular focus on command-line applications, you should define
+the word quality and then evaluate the quality of two command-line programs. One of your applications should be {\tt
+git} and the other can be chosen by your team. Examples of other programs for study include {\tt ag}, {\tt grep}, {\tt
+ps}, and {\tt top} --- or, alternatively, any other program installed on our computers.
+
+To write this commentary on software quality, your team should create a new repository and share it with the course
+instructor. Then, make sure that all of the members of your team can also access the Git repository. Please use a
+descriptive name for your repository that includes the name of our course and a numerically-based name for your team.
+Again using Markdown to write your documents, please create one file to define the meaning of the word quality and then
+two additional files, one for each of the command-line programs that you select. Please divide up the work for this part
+of the assignment so that everyone makes their own well-defined contribution.
+
+Once you have finished the aforementioned tasks, you and your team members should further investigate how to use the two
+programs that you have chosen. Then, you should write user documentation for both of the programs. Instead of
+duplicating what is already available in the ``man'' pages for these programs, you tutorials should provide examples and
+value-added advice about how to use them in the most effective manner. As you complete this part of the assignment, you
+can imagine that you are writing a blog post to explain to others how these command-line programs work. In particular,
+your documentation should focus on the inputs, outputs, and behavior of the chosen programs. To complete this final part
+of the assignment, please again collaborate with your team members to write Markdown files to document the programs;
+like before, all of these files should be stored in your team's Git repository. Please ask the course instructor if you
+have questions about how to complete the final phrase of this laboratory assignment.
+
+For submission, please use {\tt pandoc} to convert all of your Markdown files to PDF documents.
+
+\subsection*{Summary of the Required Deliverables}
+
+This assignment invites you to submit printed and signed versions of the following deliverables:
+
+\vspace*{-.1in}
+\begin{enumerate}
+  \setlength{\itemsep}{0in}
+  \item The modified Markdown files that you produced individually.
+  \item A single copy of the document describing your definition of the word ``quality''.
+  \item A single copy of the documents that evaluate the quality of two programs.
+  \item A single copy of the documents that give a usage tutorial for two programs.
+\end{enumerate}
+\vspace*{-.1in}
+
+% In adherence to the Honor Code, students should complete this assignment on an individual basis. While it is appropriate
+% for students in this class to have high-level conversations about the assignment, it is necessary to distinguish
+% carefully between the student who discusses the principles underlying a problem with others and the student who produces
+% assignments that are identical to, or merely variations on, someone else's work.  With the exception of the {\tt
+%   Lab1.java} program that you created in the first part of the assignment, deliverables that are nearly identical to the
+% work of others will be taken as evidence of violating the \mbox{Honor Code}.
 
 \end{document}
