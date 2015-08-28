@@ -55,13 +55,15 @@ everyone is able to successfully complete each of the steps outlined in this ass
 
     If everything worked correctly, you should be able to download all of the files that you will need for this
     laboratory assignment. Please resolve any problems that you encountered by first reviewing the Bitbucket
-    documentation and then discussing the matter with a teaching assistant.  If you are still not able to run ``{\tt git
-      clone}'', then please see the course instructor.
+    documentation. If you are still not able to run ``{\tt git clone}'', then please see the course instructor or a
+    talk with a member of your team.
 
   \item Using your terminal window, you should browse the files that are in this Git repository.  In particular, please
-    look in the {\tt cs280f2015-share/labs/lab01/} directory and use {\tt gvim} to study the Java program that
-    you find.  Remember, the ``{\tt cd}'' command allows you to change into a directory. So, you could type the following
-    commands to go to the directory that contains today's Java program; make sure you fully understand these steps!
+    look in the {\tt cs280f2015-share/labs/lab01/} directory and use {\tt gvim} to study the Markdown files that you
+    find.  Throughout the semester, we will use Markdown (and, later, \LaTeX) to write documentation for software
+    systems --- so, for today's laboratory assignment you should review these files to learn some of the basics of
+    Markdown. Additionally, remember, the ``{\tt cd}'' command allows you to change into a directory. So, you could type
+    the following commands to go to the directory that contains today's files.
 
     \vspace*{-.1in}
     \begin{verbatim}
@@ -79,11 +81,13 @@ everyone is able to successfully complete each of the steps outlined in this ass
 
 \section*{Creating a New Personal Repository}
 
-Now that you have cloned an existing Git repository, you should make a new repository in the {\tt cs280F2015/} directory
-that you previously created.  First, make a new directory called {\tt cs280F2015-<your user name>} using the ``{\tt
-mkdir}'' command in your terminal window. If you opened a new terminal, then you could type the following commands to
-create the needed directory; again, make sure that you understand each of these steps, discussing them with your
-neighbor, a teaching assistant, a departmental tutor, or the course instructor if you are confused.
+\begin{sloppypar}
+  Now that you have cloned an existing Git repository, you should make a new repository in the {\tt cs280F2015/} directory
+  that you previously created.  First, make a new directory called {\tt cs280F2015-<your user name>} using the ``{\tt
+  mkdir}'' command in your terminal window. If you opened a new terminal, then you could type the following commands to
+  create the needed directory; again, make sure that you understand each of these steps, discussing them with your
+  neighbor, a teaching assistant, a departmental tutor, or the course instructor if you are confused.
+\end{sloppypar}
 
     % \vspace*{-.1in}
     \begin{verbatim}
@@ -97,33 +101,34 @@ neighbor, a teaching assistant, a departmental tutor, or the course instructor i
     % entire {\tt labs/} directory from the {\tt cs112s2015-share} repository to {\tt cs112S2015-<your user name>}.
 
 Once you have changed into this directory you can type the command ``{\tt git init .}''. Then, you can use the ``{\tt
-mkdir laboratorys}'' command to make a new directory and ``{\tt cd laboratorys}'' to change into it.  Next, you should
-again use the ``{\tt mkdir}'' command to create an additional directory called {\tt laboratory01}.  Please make sure that
+mkdir labs}'' command to make a new directory and ``{\tt cd labs}'' to change into it.  Next, you should
+again use the ``{\tt mkdir}'' command to create an additional directory called {\tt labs}.  Please make sure that
 you completed each of these steps inside of the parent directory called {\tt cs280F2015-<your user name>}; if you are
-stuck, ask the course instructor or a teaching assistant for help. Also, make sure that you review all of the commands
+stuck, ask the course instructor or a team member for help. Also, make sure that you review all of the commands
 that you have typed to see if you input them exactly as they are written on this assignment sheet.
 
-After completing this step you should click on the file icon in the upper left corner to load the Ubuntu file browser.
-Once the first window displays, you should click the ``File/New Window'' menu item to load a second graphical file
-browser. At this point, you should have two file system browsers that are displaying the same content.  In the first
-window, which we will call the ``source'' window, you should navigate to the {\tt cs280f2015-share} directory by
-clicking on the correct folder icons.  Now, please find the {\tt Kinetic.java} file that is stored inside of the {\tt
-  cs280f2015-share} repository in the ``source'' window. In the second window, which we will call the ``destination''
-window, you should follow the same process to first navigate to the {\tt cs280F2015-<your user name>} directory,
-ultimately finding the {\tt laboratory01/} directory. Before you move on to the next step, please have the course instructor
-or a teaching assistant verify that you have everything set up correctly.
+If you know how to do so, then simply use the terminal window to copy all of the Markdown files from the share
+repository to your own repository. But, if you do not know how to do this step in the terminal window, then you can
+complete the remainder of these instructions. Next, you should click on the file icon in the upper left corner to load
+the Ubuntu file browser.  Once the first window displays, you should click the ``File/New Window'' menu item to load a
+second graphical file browser. At this point, you should have two file system browsers that are displaying the same
+content.  In the first window, which we will call the ``source'' window, you should navigate to the {\tt
+cs280f2015-share} directory by clicking on the correct folder icons.  Now, please find the Markdown file(s) that
+are stored inside of the {\tt cs280f2015-share} repository in the ``source'' window. In the second window, which we will
+call the ``destination'' window, you should follow the same process to first navigate to the {\tt cs280F2015-<your user
+name>} directory, ultimately finding {\tt lab01/}.
 
-The next step in this laboratory requires you to use the graphical browser to copy the {\tt Kinetic.java} file from the
+The next step in this laboratory requires you to use the graphical browser to copy the Markdown files from the
 ``source'' browser to the ``destination'' browser, ensuring that the file is transferred from the {\tt cs280f2015-share}
 repository to the {\tt laboratory01/} directory of the {\tt cs280F2015-<your user name>} repository.  Once the files are
 in your own Git repository, please use the {\tt git add} and {\tt git commit} commands to add them correctly. You can
 learn how to use the {\tt git add} and {\tt git commit} commands in the terminal window by reviewing the ``Git
-Cheatsheet'', discussing them with teaching assistants and course instructor, or searching on the Internet.
+Cheatsheet'', discussing them with your team members and course instructor, or searching on the Internet.
 
 Next, you should use the Bitbucket Web site to create a repository that has the same name as the local directory and
 local repository.  You must follow Bitbucket's instructions to push the code and tags in your local repository to the
 remote one. When you are finished with this step, you should see in your Web browser that the Bitbucket servers are
-storing the Java program. Once the Git repository contains the correct files, you should share your Bitbucket repository
+storing the Markdown files. Once the Git repository contains the correct files, you should share your Bitbucket repository
 with the course instructor. In this course your instructor's Bitbucket user name is ``gkapfham''.
 
 At this point, you can learn more about Git by consulting Web sites like \url{http://try.github.io/} and
