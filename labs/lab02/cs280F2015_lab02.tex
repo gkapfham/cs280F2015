@@ -17,7 +17,35 @@ system. Your team of software engineers should also select one individual who wi
 and thus be responsible for interacting with any future customers or developers who will want to use or extend your
 product.
 
-\section*{Configuring Git and Bitbucket}
+\section*{Eliciting the Requirements}
+
+You are responsible for implementing a data generator that should take a list of numbers as input and produce a list of
+lists as output.  You are given the following specification for the data generator.
+
+\begin{quote}
+For an input list of objects, denoted $L$, the data generator must produce all of the lists that can be obtained by swapping two
+adjacent items in $L$.
+\end{quote}
+
+\noindent
+For list $L = \{1, 2, 3, 4\}$, the customer wants the data generator to output $L=\{L_1, \ldots, L_6\}$ with
+
+\begin{itemize}
+    \item[] $L_1 = \{2, 1, 3, 4\}$
+    \item[] $L_2 = \{3, 2, 1, 4\}$
+    \item[] $L_3 = \{4, 2, 3, 1\}$
+    \item[] $L_3 = \{1, 3, 2, 4\}$
+    \item[] $L_4 = \{1, 4, 3, 2\}$
+    \item[] $L_6 = \{1, 2, 4, 3\}$
+\end{itemize}
+
+The customer knows that the component that you must create will be a part of a larger system that has not yet been
+fully implemented.  You are responsible for implementing this data generator so that it functions according to the
+provided specification.  However, please note that the stated requirements may not be entirely correct!  It is the job
+of your team to interact with the customer to ensure that the system is implemented as desired.  Using Markdown, you
+should write a requirements document that fully explains the inputs, outputs, and behavior of the data generator.
+
+
 
 \section*{Summary of the Required Deliverables}
 
