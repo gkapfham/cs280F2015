@@ -9,139 +9,110 @@
 \vspace*{-.1in}
 \section*{Introduction}
 
-Now that you understand how to use the Git version control repository, the Bitbucket site for managing these Git
-repositories, and the use of Markdown language system for the purpose of documenting software, we are going to start
-team-based implementation of a simple software system. Paying careful attention to both the phases of the software
-lifecycle and the roles of members of a development team, as explained in Sections 1.5 through 1.8 of the textbook, you
-should interact with a customer to learn the requirements of a program and then design, implement, document, and release
-the system. Your team of software engineers should also select one individual who will serve as the maintainer of the
-system and thus be responsible for interacting with any future customers or developers who will want to use or extend
-your product.
+Now that you are completely comfortable with the use of the Git version control repository, the Bitbucket site for managing
+these Git repositories, and the use of the Markdown language for the purpose of documenting your software, we will
+continue team-based implementation of a simple software system. In particular, your team will ``receive'' all of the
+deliverables that another team implemented in the last laboratory assignment. Then, it will be your team's
+responsibility to compare and contrast the deliverables that you created with those that the other team produced.
 
-\section*{Understanding the Lifecycle and Organizing Your Team}
+Next, you must carefully validate and verify both the deliverables that you received and those that you produced. For
+this assignment, these tasks will involve you finding and discussing mistakes in the requirements, design, and tutorial
+documents from your team and your partner team while also writing JUnit test cases for both the Java code that you
+implemented and the code created by your team. Members of your team who have questions about the deliverables that you
+received should direct them all to the maintainer from the team who shared their system with you.
 
-Before you start working on this assignment, please carefully review the content at the end of Section 1.8 in SETP to
-learn more about the software development lifecycle. Students who want to better understand the lifecycle and how it
-might be organized are also encouraged to read SETP's Section 2.2. Once all of the members of your team understand the
-phases of the software development lifecycle, discuss the roles in a development team, as outlined in Section 1.7 of the
-textbook.
+\section*{Evaluating the Specification and Design of the Systems}
 
-Although your team may have fewer members than there are roles, you should pick a single individual to serve in each of
-the capacities mentioned in SETP. For instance, one member of your team should be responsible for requirements analysis
-and definition. To ensure that this assignment can be completed in a timely manner, your team is not required to pick
-people to serve in the dedicated role of a software tester. As we will comprehensively test and evaluate your product in a
-later laboratory assignment, your developers can also perform informal testing.
+Paying careful attention to both the phases of the software lifecycle and the roles of members of a development team, as
+explained in Sections 1.5 through 1.8 of the textbook, your team will interact with the customer to revisit the
+requirements of the program and then, as needed, re-design, re-implement, re-document, and fully test the system.  The
+maintainer of your system is also still responsible for interacting with the developers in your partner team who will
+want to validate and verify your product. Teams with questions about these tasks should contact the course instructor.
 
-Even though the program under development for this laboratory assignment may be simple enough to not necessitate
-structured implementation in a team following a development lifecycle, you and your team members should resist the
-temptation to simply start to implement the program. For the sake of learning and to ensure that you are best prepared
-to implement much more complex systems, immerse yourself in the software development lifecycle and your roles. In
-particular, your team should also ensure that you do not ``blur'' the roles of your team members --- that is, the
-person(s) in charge of implementation should not be involved in interviewing the customer.
+Before you start working on this assignment, please carefully review the content at the end of Section 2.2 in SETP to
+learn more about the tasks associated with the validation and verification of software. Once all members of your team
+understand these tasks, you should pick one member who will be responsible for evaluating both the deliverables that you
+have received from your partner team and the system that you have created as part of the last assignment. At a high
+level, you should begin to ask and objectively answer questions such as ``what are the similarities and differences
+between our two systems?'' and ``which system is better and why do I think that it is better?'' and ``are these two
+systems fundamentally similar to or different from each other?''
 
-\section*{Eliciting Requirements from the Customer}
+Specifically, this member of the team should assess the requirements documents in an effort to determine if it is
+clearly written in a style that is precise, unambiguous, and free from errors in spelling and grammar. When this
+individual is reviewing the object-oriented design, it is important to fully answer relevant questions such as: ``How
+many classes does this design use?'' and ``What will be the relationship between the classes?'' and ``What methods do
+the classes have?'' and ``What are the inputs and outputs of the methods?'' and ``Is the design easy to understand?''
+Again, this team member should ask and answer all of these questions about the design of both their own system and the
+one that was shared with them at the start of the laboratory assignment.
 
-You are responsible for implementing a data generator that should take a list of numbers as input and produce a list of
-lists as output.  You are given the following specification for the data generator.
+\section*{Verifying the Systems Through Testing}
 
-\begin{quote}
-For an input list of objects, denoted $L$, the data generator must produce all of the lists that can be obtained by swapping two
-adjacent items in $L$.
-\end{quote}
+In the last assignment, the developer(s) and tester(s) took the requirements and design documents and thought about how
+the system should be implemented. For this assignment, one of the people who was not chosen to evaluate the requirements
+and design documents should be tasked with validating the implementation of their own system. In particular, this task
+involves writing complete JUnit test cases for all of the methods in your program. The other member of your team is
+then responsible for writing tests in JUnit for the system that was shared with your team by the partner team. Whenever
+possible, these two team members should try to re-use tests across the two systems.
 
-\noindent
-For list $L = \{1, 2, 3, 4\}$, the customer wants the data generator to output $L=\{L_1, \ldots, L_6\}$ with
+The task of these two testers is to ensure that the program faithfully adheres to the descriptions already produced by
+the specifiers and designers of both systems. When an aspect of the requirements and design documents is not clear, the
+developer(s) must talk with maintainer of the system to resolve any outstanding concerns. If it is necessary to do so,
+this laboratory assignment may necessitate that the requirements, design, or implementation of either system evolve so
+as to best support comprehensive verification.  The creators of these deliverables must quickly commit any changes to
+their repository so as to best ensure that the requirements and design of the system are in sync with its
+implementation and the testing effort that you complete during this assignment.
 
-\begin{itemize}
-  \itemsep 0in
-  \item[] $L_1 = \{2, 1, 3, 4\}$
-  \item[] $L_2 = \{3, 2, 1, 4\}$
-  \item[] $L_3 = \{4, 2, 3, 1\}$
-  \item[] $L_3 = \{1, 3, 2, 4\}$
-  \item[] $L_4 = \{1, 4, 3, 2\}$
-  \item[] $L_6 = \{1, 2, 4, 3\}$
-\end{itemize}
+At the start of this laboratory assignment, the two testers on your team may think that ``they do not have any work to
+do''. First, these individuals should study sources on the Internet and in the ACM Digital Library to learn how to test
+a Java program using JUnit test cases. Next, these two team members should review the content in Section 3.1 so that they
+can learn more about project planning and the best way to define project milestones and activities. Using the knowledge
+from this content in SETP, the team members should outline the activities and milestones that are relevant for the
+completion of this assignment in one week. Finally, they can examine the content in Section 3.2 to learn more about the
+roles in a software engineering project and the working styles that team members may exhibit during this assignment.
+Ultimately, these team members must plan the completion of the project to ensure the timely delivery of two well-tested
+programs.
 
-The customer knows that the component that you must create will be a part of a larger system that has not yet been
-fully implemented.  You are responsible for implementing this data generator so that it functions according to the
-provided specification.  However, please note that the stated requirements may not be entirely correct!  It is the job
-of your team to interact with the customer to ensure that the system is implemented as desired.  Using Markdown, you
-should write a requirements document that fully explains the inputs, outputs, and behavior of the data generator.
+% \section*{Carefully Review the Honor Code}
 
-\section*{Designing the System}
+% The Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny
+% Academic Bulletin.  The Honor Program applies to all work that is submitted for academic credit or to meet non-credit
+% requirements for graduation at Allegheny College.  This includes all work assigned for this class (e.g., examinations,
+%   laboratory assignments, and the final project).  All students who have enrolled in the College will work under the Honor
+% Program.  Each student who has matriculated at the College has acknowledged the following pledge:
 
-Working with the members of your team and leveraging the content in the requirements document, you should create a
-design for your system.  As you are finalizing the object-oriented design, you should try to develop answers to relevant
-questions such as: How many classes will you use? What will be the relationship between the classes? What methods will
-the classes have? What will be the inputs and outputs of the methods?  Is the design easy to understand?  After
-answering these questions, you should use Markdown to write a design document with text and diagrams that explain the
-system. Since the main focus of this assignment is not design diagrams, students may use any reasonable tool to create
-their diagrams and, if necessary, include them as separate files in their team's repository. When clarification of the
-system's specification is necessary (e.g., due to writing ambiguities), the designers should interact with the
-individual(s) who elicited \mbox{the requirements}.
+% \vspace*{-.05in}
+% \begin{quote}
+%   I hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the
+%   integrity of both myself and the College community as a whole.
+% \end{quote}
+% \vspace*{-.05in}
 
-\section*{Implementing the System}
-
-The developer(s) and tester(s) on your team should take the requirements and design documents and start to think about
-how the system will be implemented. Your task is to ensure that the program faithfully adheres to the descriptions
-already produced by other members of your team. When an aspect of the requirements and design documents is not clear,
-the developer(s) must talk with the people who created these documents to resolve any outstanding concerns. The creators
-of these documents must quickly commit any changes to their repository so as to best ensure that the requirements and design
-of the system are in sync with its implementation.
-
-\section*{Ensuring the Effective Operation of Your Team}
-
-When you start to work on this laboratory assignment, it may seem as though the designer(s), developer(s), and tester(s)
-``do not have any work to do'' because the requirements of the system have not been established. Yet, if you carefully
-think about the work that you must complete for this assignment, it will become clear that this is not the case! For
-instance, one member of your team should be tasked with creating all of the needed means for communication with tools
-such as Slack and Bitbucket. Additionally, team members who are waiting to complete their chosen tasks should consider
-investigating the use of tools, like Trello, to organize their team's efforts. Finally, it is important for team
-members to spend time creating the templates for their deliverables and then carefully ``sharpening their tools''. For
-instance, the developer(s) on the team can ensure that they have a smoothly functioning development environment that
-will support the implementation of well-documented and correct code. Please see the instructor if you have questions
-about \mbox{this matter}.
-
-\section*{Carefully Review the Honor Code}
-
-The Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny
-Academic Bulletin.  The Honor Program applies to all work that is submitted for academic credit or to meet non-credit
-requirements for graduation at Allegheny College.  This includes all work assigned for this class (e.g., examinations,
-  laboratory assignments, and the final project).  All students who have enrolled in the College will work under the Honor
-Program.  Each student who has matriculated at the College has acknowledged the following pledge:
-
-\vspace*{-.05in}
-\begin{quote}
-  I hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the
-  integrity of both myself and the College community as a whole.
-\end{quote}
-\vspace*{-.05in}
-
-\noindent It is understood that an important part of the learning process in any course, and particularly one in
-computer science, derives from thoughtful discussions with teachers and fellow students.  Such dialogue is encouraged.
-However, it is necessary to distinguish carefully between the student who discusses the principles underlying a problem
-with others and the student who produces assignments that are identical to, or merely variations on, someone else's
-work.  While it is acceptable for students in this class to discuss their deliverables with their classmates, items that
-are nearly identical to the work of others will be taken as evidence of violating the Honor Code. In particular, make
-sure that your team members do not inappropriately communicate with the members of \mbox{other teams}.
+% \noindent It is understood that an important part of the learning process in any course, and particularly one in
+% computer science, derives from thoughtful discussions with teachers and fellow students.  Such dialogue is encouraged.
+% However, it is necessary to distinguish carefully between the student who discusses the principles underlying a problem
+% with others and the student who produces assignments that are identical to, or merely variations on, someone else's
+% work.  While it is acceptable for students in this class to discuss their deliverables with their classmates, items that
+% are nearly identical to the work of others will be taken as evidence of violating the Honor Code. In particular, make
+% sure that your team members do not inappropriately communicate with the members of \mbox{other teams}.
 
 \section*{Summary of the Required Deliverables}
 
 This assignment invites you to submit printed and signed versions of the following deliverables; please see the
-instructor if you have questions about any of these items. Please make sure that your team creates a version control
-repository in Bitbucket to store all of the deliverables for this assignment; since you will again select your own
-teams, please create a repository with a numerically-based name and share it with the course instructor. Also note that
-all of the written documents must be prepared with Markdown and, for submission, converted to PDF using {\tt pandoc}.
+instructor if you have questions about any of these items. You must make sure that your team uses the same version
+control repository in Bitbucket as you did for the last assignment when storing the evaluations and tests for your
+project.  Also, you should store the evaluations and tests for your partner team's system in their shared repository.
+Don't forget that all of the documents must be prepared with Markdown and, for submission, converted to PDF using {\tt
+pandoc}.
 
 \vspace*{-.1in}
 \begin{enumerate}
   \setlength{\itemsep}{0in}
   \item A complete description of the roles that each team member fulfilled.
-  \item A requirements document that fully describes the features of your system.
-  \item Expressed in writing and as a simple technical diagram, the design of your system.
-  \item Well-documented Java source code that fulfills all of the system's requirements.
-  \item A tutorial that explains how to use all of the features of your finished system.
-  \item Individually completed and submitted reviews of all of the team members.
+  \item A full-featured evaluation of your system and the system that you received.
+  \item A detailed description of the project management plan that your team followed.
+  \item Well-documented Java source code for all of the tests for both of the systems.
+  \item A tutorial that explains how to run the test suites for both of the systems.
+  \item A collaboratively written ``lessons learned'' document reflecting on these two labs.
 \end{enumerate}
 \vspace*{-.1in}
 
