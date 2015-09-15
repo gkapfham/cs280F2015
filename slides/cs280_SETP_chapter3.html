@@ -143,11 +143,15 @@
           <h1><b class="blue">Causes of Inaccurate Estimates</b></h1>
         </section>
 
-        <section>
+        <section data-background-transition="none" data-background="http://farm6.static.flickr.com/5592/14703171688_7ae3be1417_b.jpg" style="">
+        </section>
+
+        <section data-background-transition="none" data-background="http://farm6.static.flickr.com/5592/14703171688_7ae3be1417_b.jpg" style="background: rgba(29,31,33,0.9)">
           <h1>Estimation Strategies</h1>
           <p class="fragment">Expert judgement</p>
           <p class="fragment">Human-derived equations</p>
           <p class="fragment">Machine-derived equations</p>
+          <br /><small><a title="SRP Estimation Jar Winner" href="http://flickr.com/photos/jsyk/14703171688">flickr photo</a> shared by <a href="http://flickr.com/people/jsyk">Pioneer Library System</a> under a <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons ( BY-NC-ND ) license</a> </small>
         </section>
 
         <section>
@@ -175,18 +179,18 @@
           theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
           transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
-          // Parallax scrolling
-          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-          // parallaxBackgroundSize: '2100px 900px',
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
 
-          // Optional libraries used to extend on reveal.js
+            // Optional libraries used to extend on reveal.js
           dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
           ]
         });
 
