@@ -91,7 +91,7 @@ separate files in their team's repository. When clarification of the system's sp
 writing ambiguities), the designers should interact with the individual(s) who elicited \mbox{the requirements}. Yet,
 your team should carefully ensure that the system's requirements and design are correctly in sync.
 
-\section*{Implementing the System}
+\section*{Implementing and Testing the System}
 
 The developer(s) and tester(s) on your team should take the requirements and design documents and start to think about
 how the system will be implemented. Your task is to ensure that the program faithfully adheres to the descriptions
@@ -105,7 +105,9 @@ should take care to create a system that is well-documented through comments and
 it is possible to do so, these members of your team must also add (semi-)automated methods for verifying that the
 implementation adheres to the requirements that previously were elicited from the customer. For instance, if your team
 decides to implement {\tt git-beagle} in the Java programming language, then you should test it with automated tests
-cases that you wrote in JUnit, the industry standard for automated testing in Java.
+cases that you wrote in JUnit, the industry standard for automated testing in Java. Overall, as you are implementing and
+testing your system you should hold yourselves to a high standard under the assumption that other software engineers
+will review and use your code.
 
 \section*{Ensuring the Effective Operation of Your Team}
 
@@ -122,6 +124,17 @@ about \mbox{this matter}.
 
 \section*{Presenting Your Programming Systems Product}
 
+At the start of next week's laboratory session, each team will give a short five minute presentation explaining their
+own implementation of the {\tt git-beagle} concept. You will be responsible for highlighting the key features of your
+tool and the ways in which you did your best to specify, design, implement, release, and document it. Whenever possible,
+you should give a high-quality, interactive, and engaging presentation that is both fun, interesting, and technically
+correct. Unless a team can demonstrate that it is not possible for them to implement their presentation as a program,
+all teams should use programs like {\tt reveal.js}, {\tt big}, or {\tt beamer} to create their presentations. Creating
+your presentations using one of these tools is ideal because it will allow your team to store all of its content in a
+Git version control repository and thus ultimately be released with the rest of your programming systems product.
+Students who would like to learn more about implementing presentations with one of these frameworks can study some of
+the examples that are available in the course instructor's GitHub repositories available at {\tt
+https://github.com/gkapfham/}.
 
 \section*{Carefully Review the Honor Code}
 
@@ -144,7 +157,7 @@ However, it is necessary to distinguish carefully between the student who discus
 with others and the student who produces assignments that are identical to, or merely variations on, someone else's
 work.  While it is acceptable for students in this class to discuss their deliverables with their classmates, items that
 are nearly identical to the work of others will be taken as evidence of violating the Honor Code. In particular, make
-sure that your team members do not inappropriately communicate with the members of \mbox{other teams}.
+sure that your team members do not inappropriately share deliverables with the members of \mbox{other teams}.
 
 \section*{Summary of the Required Deliverables}
 
@@ -163,6 +176,7 @@ all of the written documents must be prepared with Markdown and, for submission,
   \item Well-documented Java source code that fulfills all of the system's requirements.
   \item A tutorial that explains how to use all of the features of your finished system.
   \item Individually completed and submitted reviews of all of the team members.
+  \item An informative and interesting five-minute presentation that explains your software.
 \end{enumerate}
 \vspace*{-.1in}
 
