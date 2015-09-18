@@ -54,20 +54,42 @@ to develop their own name for their programming systems product that best repres
 You should interact with the course instructor to learn more about the features that {\tt git-beagle} should provide.
 Additionally, one of your team members should investigate existing tools or online discussion forums that outline the
 features that are common to software tools like {\tt git-beagle}. However, the basic function of the tool will proceed
-in the following fashion. When given a root file system directory, {\tt git-beagle} will recursively traverse the
-filesystem and look for all of the directories that contain local or remote Git repositories.
+in the following manner. When given a root file system directory, {\tt git-beagle} will recursively traverse the
+filesystem and look for all of the directories that contain local or remote Git repositories. After finding a Git
+repository, {\tt git-beagle} will collect and report relevant information about this repository. For instance, your tool
+might report files that have been modified but not yet committed and files that are currently in the Git repository but
+not tracked by Git. If {\tt git-beagle} finds a Git repository that is ``clean'' and thus has nothing to commit, it
+should also report this information to the user. The {\tt git-beagle} program should also report summary statistics that
+note details about, for instance, how many repositories were found overall and how many files were in the repositories
+but not yet added to Git's records.
+
+For this laboratory assignment, all of the students responsible for requirements elicitation and analysis will interact
+with the customer at the same time. In addition, these students may assume, for this assignment, that the customer is a
+computer scientist who understands most of the intricacies associated with using the Git version control. When one team
+learns something important about the features of the system, then one of this team's members should share these details
+with all of the other team members through an appropriate channel in Slack. Since the ultimate goal for our course is to
+release a final version of {\tt git-beagle} in a subsequent assignment, teams can share details about the system's
+requirements within the appropriate bounds of the Honor Code.
 
 \section*{Designing the System}
 
+For this assignment, teams are encouraged to design and implement a system that uses whatever programming languages,
+development environments, and execution means that are most suited to the knowledge and skills of the team's members. 
+In light of this freedom, the language used in this section and the following sections will be ``generic'' and thus not,
+for instance, refer to language concepts (e.g., ``object-oriented'' or ``Java class'') that are specific to a single
+programming language or development environment. Please see the course instructor if you have questions about this
+issue.
+
 Working with the members of your team and leveraging the content in the requirements document, you should create a
-design for your system.  As you are finalizing the object-oriented design, you should try to develop answers to relevant
-questions such as: How many classes will you use? What will be the relationship between the classes? What methods will
-the classes have? What will be the inputs and outputs of the methods?  Is the design easy to understand?  After
-answering these questions, you should use Markdown to write a design document with text and diagrams that explain the
-system. Since the main focus of this assignment is not design diagrams, students may use any reasonable tool to create
-their diagrams and, if necessary, include them as separate files in their team's repository. When clarification of the
-system's specification is necessary (e.g., due to writing ambiguities), the designers should interact with the
-individual(s) who elicited \mbox{the requirements}.
+design for your system.  As you are finalizing the system's design, you should try to develop answers to relevant
+questions such as: How many components will you use? What will be the relationship between the components? What
+functions will the components have? What will be the inputs and outputs of the functions?  Is the design easy to
+understand?  Can you actually implement and test this design? After answering these questions, you should use Markdown
+to write a design document with text and diagrams that explain the system. Since the main focus of this assignment is
+not design diagrams, students may use any reasonable tool to create their diagrams and, if necessary, include them as
+separate files in their team's repository. When clarification of the system's specification is necessary (e.g., due to
+writing ambiguities), the designers should interact with the individual(s) who elicited \mbox{the requirements}. Yet,
+your team should carefully ensure that the system's requirements and design are in correctly sync.
 
 \section*{Implementing the System}
 
@@ -90,6 +112,9 @@ members to spend time creating the templates for their deliverables and then car
 instance, the developer(s) on the team can ensure that they have a smoothly functioning development environment that
 will support the implementation of well-documented and correct code. Please see the instructor if you have questions
 about \mbox{this matter}.
+
+\section*{Presenting Your Programming Systems Product}
+
 
 \section*{Carefully Review the Honor Code}
 
