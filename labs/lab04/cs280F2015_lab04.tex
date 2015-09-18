@@ -3,70 +3,42 @@
 \usepackage[compact]{titlesec}
 
 \begin{document}
-\MYTITLE{Laboratory Assignment Two: Starting with Team-Based Implementation of Software}
-\MYHEADERS{Laboratory Assignment Two}{Due: September 11, 2015}
+\MYTITLE{Laboratory Assignment Four: Team-Based Creation and Presentation of Software}
+\MYHEADERS{Laboratory Assignment Four}{Due: September 25, 2015}
 
 \vspace*{-.1in}
 \section*{Introduction}
 
-Now that you understand how to use the Git version control repository, the Bitbucket site for managing these Git
-repositories, and the use of Markdown language system for the purpose of documenting software, we are going to start
-team-based implementation of a simple software system. Paying careful attention to both the phases of the software
-lifecycle and the roles of members of a development team, as explained in Sections 1.5 through 1.8 of the textbook, you
-should interact with a customer to learn the requirements of a program and then design, implement, document, and release
-the system. Your team of software engineers should also select one individual who will serve as the maintainer of the
-system and thus be responsible for interacting with any future customers or developers who will want to use or extend
-your product.
+Now that you know how to use a wide variety of software tools and you are more comfortable with eliciting requirements
+from a customer and then specifying, designing, implementing, validating, verifying, documenting, and release a
+programming systems product, we will continue these efforts for a real-world system that is clearly useful to other
+computer scientists and software engineers.
+
+As you complete this assignment, please continue to pay careful attention to both the phases of the software development
+lifecycle and the roles of the members of a software development team, as explained in Sections 1.5 through 1.8 of the
+textbook.  Additionally, you should carefully review the content at the end all of your team members should re-read
+Section 2.2 in SETP to learn more about the tasks associated with the validation and verification of software.  Next,
+your team members should review the content in Section 3.1 so that they can learn more about project planning and the
+best way to define project milestones and activities. Using the knowledge from this content in SETP, your team members
+should all be able to outline the activities and milestones that are relevant for the completion of this assignment in
+one week. Finally, they can examine the content in Section 3.2 to learn more about the roles in a software engineering
+project and the working styles that team members may exhibit during the completion of this assignment.
+
+It is also important for your team members to study Chapter 1 of MMM so that you can learn more about the effort that is
+necessary to implement a programming systems product --- the ultimate goal that you should complete for this
+assignment. Finally, please examine the content in MMM's Chapter 2 so that you understand the different types of tasks
+that are normally completed during software development and how knowledge of a task's characteristics may better enable
+you to estimate completion times. Please see the instructor if you have questions about these readings.
 
 \section*{Understanding the Lifecycle and Organizing Your Team}
 
-Before you start working on this assignment, please carefully review the content at the end of Section 1.8 in SETP to
-learn more about the software development lifecycle. Students who want to better understand the lifecycle and how it
-might be organized are also encouraged to read SETP's Section 2.2. Once all of the members of your team understand the
-phases of the software development lifecycle, discuss the roles in a development team, as outlined in Section 1.7 of the
-textbook.
 
-Although your team may have fewer members than there are roles, you should pick a single individual to serve in each of
-the capacities mentioned in SETP. For instance, one member of your team should be responsible for requirements analysis
-and definition. To ensure that this assignment can be completed in a timely manner, your team is not required to pick
-people to serve in the dedicated role of a software tester. As we will comprehensively test and evaluate your product in a
-later laboratory assignment, your developers can also perform informal testing.
 
-Even though the program under development for this laboratory assignment may be simple enough to not necessitate
-structured implementation in a team following a development lifecycle, you and your team members should resist the
-temptation to simply start to implement the program. For the sake of learning and to ensure that you are best prepared
-to implement much more complex systems, immerse yourself in the software development lifecycle and your roles. In
-particular, your team should also ensure that you do not ``blur'' the roles of your team members --- that is, the
-person(s) in charge of implementation should not be involved in interviewing the customer.
 
 \section*{Eliciting Requirements from the Customer}
 
-You are responsible for implementing a data generator that should take a list of numbers as input and produce a list of
-lists as output.  You are given the following specification for the data generator.
 
-\begin{quote}
-For an input list of objects, denoted $L$, the data generator must produce all of the lists that can be obtained by swapping two
-adjacent items in $L$.
-\end{quote}
 
-\noindent
-For list $L = \{1, 2, 3, 4\}$, the customer wants the data generator to output $L=\{L_1, \ldots, L_6\}$ with
-
-\begin{itemize}
-  \itemsep 0in
-  \item[] $L_1 = \{2, 1, 3, 4\}$
-  \item[] $L_2 = \{3, 2, 1, 4\}$
-  \item[] $L_3 = \{4, 2, 3, 1\}$
-  \item[] $L_3 = \{1, 3, 2, 4\}$
-  \item[] $L_4 = \{1, 4, 3, 2\}$
-  \item[] $L_6 = \{1, 2, 4, 3\}$
-\end{itemize}
-
-The customer knows that the component that you must create will be a part of a larger system that has not yet been
-fully implemented.  You are responsible for implementing this data generator so that it functions according to the
-provided specification.  However, please note that the stated requirements may not be entirely correct!  It is the job
-of your team to interact with the customer to ensure that the system is implemented as desired.  Using Markdown, you
-should write a requirements document that fully explains the inputs, outputs, and behavior of the data generator.
 
 \section*{Designing the System}
 
