@@ -1,18 +1,17 @@
 # Computer Science 280 Fall 2015
 
 This repository contains the LaTeX and HTML source code for the laboratory and practical assignments, course review
-slides, study guides, and the syllabus for Computer Science 111, Fall 2015.  Taught by [Gregory M.
+slides, study guides, and the syllabus for Computer Science 280, Fall 2015.  Taught by [Gregory M.
 Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham) in the [Department of Computer
 Science](http://www.cs.allegheny.edu) at [Allegheny College](http://www.allegheny.edu), the course has the following
 description:
 
-> An introduction to the principles of computer science with an emphasis on algorithmic problem solving and the
-> realization of algorithms using a modern object-oriented programming language. Topics include algorithms, problem
-> solving, programming, classes, primitive data types and objects, control structures, arrays and vectors, principles of
-> object-oriented design and programming, and an introduction to graphics and graphical user interfaces. The course also
-> includes an overview of the discipline of computer science and a study of the social implications of computer use. May
-> serve as the laboratory course in the Natural Science Division's distribution requirement. One laboratory per week.
-> Prerequisite: Knowledge of elementary algebra.
+> A study of the principles and concepts used in the specification, design, implementation, testing, and maintenance
+> of large software systems. Topics include requirements elicitation and analysis, formal specification, software
+> architectures, object-oriented design, software measurement, software testing and analysis, and evolution of a
+> program.  Students practice the principles of software development by participating as group members in the creation
+> of a significant software application. One laboratory per week. Prerequisites: Computer Science 210 and 220 or
+> permission of the instructor. Offered in alternate years.
 
 The source code of the LaTeX documents uses a custom LaTeX style file and several other packages that are normally
 standard with a modern LaTeX distribution such a TeXLive 2015. All of the slides are programmed with the
