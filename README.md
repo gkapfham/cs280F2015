@@ -19,9 +19,9 @@ standard with a modern LaTeX distribution such a TeXLive 2015. All of the slides
 from the [Flickr Creative Commons](https://www.flickr.com/creativecommons/) through the use of the
 [cogdog/flickr-cc-helper](https://github.com/cogdog/flickr-cc-helper) tool.
 
-You are invited to use this repository as a means for learning more about instruction in an introductory computer
-science course. If you find this repository useful, could I trouble you to star it and then acknowledge it in your own
-teaching efforts?
+You are invited to use this repository as a means for learning more about instruction in a course on the principles of
+software engineering. If you find this repository useful, could I trouble you to star it and then acknowledge it in your
+own teaching efforts?
 
 You can type the following command if you want to clone this repository:
 
