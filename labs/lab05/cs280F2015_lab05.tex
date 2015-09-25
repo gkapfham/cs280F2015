@@ -3,93 +3,32 @@
 \usepackage[compact]{titlesec}
 
 \begin{document}
-\MYTITLE{Laboratory Assignment Four: Team-Based Creation and Presentation of Software}
-\MYHEADERS{Laboratory Assignment Four}{Due: September 25, 2015}
+\MYTITLE{Laboratory Assignment Five: \\ Releasing and Maintaining a Programming Systems Product}
+\MYHEADERS{Laboratory Assignment Five}{Due: October 2, 2015}
 
 \vspace*{-.1in}
 \section*{Introduction}
 
-Now that you know how to use a wide variety of software tools and you are more comfortable with eliciting requirements
-from a customer and then specifying, designing, implementing, validating, verifying, documenting, and releasing a
-programming systems product, we will continue these efforts for a real-world system that is clearly useful to other
-computer scientists and software engineers.
 
-As you complete this assignment, please continue to pay careful attention to both the phases of the software development
-lifecycle and the roles of the members of a software development team, as explained in Sections 1.5 through 1.8 of the
-textbook.  Additionally, all of your team members should carefully review the content at the end of Section 2.2 in SETP
-to learn more about the tasks associated with the validation and verification of software.  Next, your team members
-should study the content in Section 3.1 so that they can learn more about project planning and the best way to define
-project milestones and activities. Using the knowledge from this content in SETP, your team members should all be able
-to outline the activities and milestones that are relevant for the completion of this assignment in one week. Finally,
-they can examine the content in Section 3.2 of SETP to learn more about the roles in a software engineering project and the
-working styles that team members may exhibit during the completion of this assignment.
-
-It is also important for your team members to study Chapter 1 of MMM so that you can learn more about the effort that is
-necessary to implement a programming systems product --- the ultimate goal that you should complete for this
-assignment. Finally, please examine the content in MMM's Chapter 2 so that you understand the different types of tasks
-that are normally completed during software development and how knowledge of a task's characteristics may better enable
-you to estimate completion times. Please see the instructor if you have questions about these readings.
 
 \section*{Organizing Your Software Development Team}
 
-Please organize yourselves into teams of precisely three students. Whenever it is possible to do so, please make sure that you are
-working with individuals who were not members of your team in the second laboratory assignment. After reviewing the
-reading assignments mention in the previous section and discussing the software that you are invited to implement for
-this assignment, your team should discuss who will complete this project's tasks. As you are making task assignments,
-please think about the strengths and weaknesses of the members of your development team. For instance, you should ensure
-that, as best as is possible, you ask the ``rational introverts'' on your team to complete tasks that are most suited to
-their personalities. When it seems as though there are no team members who best fit certain roles, you should make
-compromises to ensure that all work will still be successfully finished. Finally, your team should ensure that all of
-your members know how to effectively use Git and Slack and then make a plan for how you will control your source code
-and documentation and communication using channel messages and integrations.
+Please organize yourselves into teams of precisely six students. Whenever it is possible to do so, please make sure that
+you are working with individuals who were not members of your team in the second laboratory assignment. After reviewing
+the reading assignments mention in the previous section and discussing the software that you are invited to implement
+for this assignment, your team should discuss who will complete this project's tasks. As you are making task
+assignments, please think about the strengths and weaknesses of the members of your development team. For instance, you
+should ensure that, as best as is possible, you ask the ``rational introverts'' on your team to complete tasks that are
+most suited to their personalities. When it seems as though there are no team members who best fit certain roles, you
+should make compromises to ensure that all work will still be successfully finished.  Finally, your team should ensure
+that all of your members know how to effectively use Git and Slack and then make a plan for how you will control your
+source code and documentation and communication using channel messages and integrations.
 
 \section*{Eliciting Requirements from the Customer}
 
-For this laboratory assignment, your team is tasked with specifying, designing, implementing, documenting, and releasing
-a programming systems product that will give users insights into all of the Git projects in their filesystem. For the
-same of simplicity, this assignment sheet will refer to this product as {\tt git-beagle} because it will ``retrieve''
-the important details about all of the Git repositories that are stored in a user's directories; each team is encouraged
-to develop their own name for their programming systems product that best represents their tool's key features.
-
-You should interact with the course instructor to learn more about the features that {\tt git-beagle} should provide.
-Additionally, one of your team members should investigate existing tools or online discussion forums that outline the
-features that are common to software tools like {\tt git-beagle}. However, the basic function of the tool will proceed
-in the following manner. When given a root file system directory, {\tt git-beagle} will recursively traverse the
-filesystem and look for all of the directories that contain local or remote Git repositories. After finding a Git
-repository, {\tt git-beagle} will collect and report relevant information about this repository. For instance, your tool
-might report files that have been modified but not yet committed and files that are currently in the directory but
-not tracked by Git. If {\tt git-beagle} finds a Git repository that is ``clean'' and thus has nothing to commit, it
-should also report this information to the user. The {\tt git-beagle} program should also report summary statistics that
-note details about, for instance, how many repositories were found overall and how many files were in the repositories
-but not yet added to Git's records.
-
-For this laboratory assignment, all of the students responsible for requirements elicitation and analysis will interact
-with the customer at the same time. In addition, these students may assume, for this assignment, that the customer is a
-computer scientist who understands many of the intricacies associated with using the Git version control. When a team
-learns something important about the features of the system, then one of this team's members should share these details
-with all of the other team members through an appropriate channel in Slack. Since the ultimate goal for our course is to
-release a final version of {\tt git-beagle} in a subsequent assignment, teams can share details about the system's
-requirements within the appropriate bounds of the Honor Code.
 
 \section*{Designing the System}
 
-For this assignment, teams are encouraged to design and implement a system that uses whatever programming languages,
-development environments, and execution means that are most suited to the knowledge and skills of the team's members. 
-In light of this freedom, the language used in this section and the following sections will be ``generic'' and thus not,
-for instance, refer to language concepts (e.g., ``object-oriented'' or ``Java class'') that are specific to a single
-programming language or development environment. Please see the course instructor if you have questions about this
-issue.
-
-Working with the members of your team and leveraging the content in the requirements document, you should create a
-design for your system.  As you are finalizing the system's design, you should try to develop answers to relevant
-questions such as: How many components will you use? What will be the relationship between the components? What
-functions will the components have? What will be the inputs and outputs of the functions?  Is the design easy to
-understand?  Can you actually implement and test this design? After answering these questions, you should use Markdown
-to write a design document with text and diagrams that explain the system. Since the main focus of this assignment is
-not design diagrams, students may use any reasonable tool to create their diagrams and, if necessary, include them as
-separate files in their team's repository. When clarification of the system's specification is necessary (e.g., due to
-writing ambiguities), the designers should interact with the individual(s) who elicited \mbox{the requirements}. Yet,
-your team should carefully ensure that the system's requirements and design are correctly in sync.
 
 \section*{Implementing and Testing the System}
 
