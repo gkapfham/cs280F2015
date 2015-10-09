@@ -45,20 +45,21 @@ integers. All of the command-line arguments must be recognized, verified, and pa
 at \url{http://jcommander.org/}. The system must be able to efficiently solve large instances of the next release problem.
 
 You must specify, as formally as is possible, the next release planner that your team will implement.  Whenever it is
-justifiable to do so, your requirements document must adhere to the IEEE standard for software requirements
-specification.  Through team discussions and interactions with your customer, you must define correct requirements that
-adhere to all of the characteristics of good requirements.  For instance, beyond being correct and consistent, your
-requirements also must be testable and traceable.  Using \LaTeX, you should write a requirements document that fully explains
-the inputs, outputs, and behavior of the next release planner.
+justifiable to do so, your requirements document must adhere to the IEEE standard for software specification and answer
+the questions in Table 4.2 of SETP.  Through team discussions and interactions with the course instructor, you must
+define correct requirements that adhere to all of the characteristics of good requirements.  For instance, beyond being
+correct and consistent, your requirements also must be testable and traceable.  Using Markdown --- or \LaTeX\ if that is
+a better tool for clearly stating your requirements --- you should write a requirements document that fully explains the
+inputs, outputs, and behavior of the next release planner.
 
 \section*{Designing the System}
 
-Working with the members of your team and leveraging the content in the requirements document, you must create a
-design for your system.  As you are finalizing the object-oriented design, you should try to develop answers to relevant
+Working with the members of your team and leveraging the content in the requirements document, you must create a design
+for your system.  As you are finalizing the object-oriented design, you should try to develop answers to relevant
 questions such as: How many classes will you use? What will be the relationship between the classes? What methods will
 the classes have? What will be the inputs and outputs of the methods?  Is the design testable?  After answering these
-questions, you should use \LaTeX\  to write a design document with text and diagrams that explain the system. Adhering
-to the JavaDoc standard, you should create extensive documentation for your classes.
+questions, you should use Markdown or \LaTeX\ to write a design document with text and diagrams that explain the system.
+Adhering to the JavaDoc standard, you should create documentation for your classes.
 
 \section*{Implementing and Testing the Program}
 
@@ -70,10 +71,8 @@ your implementation must include the following:
 \begin{enumerate}
 \itemsep0em
     \item A version control repository that contains all of the artifacts for the project
-    \item A build system that can build, clean, test, document, and run the program
-    \item A high-coverage test suite that effectively tests all of the classes in the program
-    \item A coverage report that was produced by the JaCoCo coverage monitoring tool
-    \item Fully documented Java source code that completely fulfills the requirements
+    \item A high-quality JUnit test suite that effectively tests all of the classes in the program
+    \item Fully documented Java source code that completely fulfills the stated requirements
 \end{enumerate}
 \vspace*{-.1in}
 
@@ -90,13 +89,13 @@ This assignment invites your team to submit one printed version of the following
     \item A description of and justification for your team's chosen organization, roles, and tool support
     \item A document that clearly specifies the inputs, outputs, and behavior of the next release planner
     \item A document that explains the planner's design, with details about classes and methods
-    \item All of the implementation artifacts (e.g., build system, source code, and the coverage report)
+    \item All of the implementation artifacts (e.g., source code and its comprehensive documentation)
 \end{enumerate}
 \vspace*{-.1in}
 
 You must also ensure that the instructor has read access to your Bitbucket repository that is named according to the
 convention {\tt cs280F2015-lab06-team{\em k}}, with {\tt {\em k}} representing the number of your assigned team.  Your
 repository should contain all of the deliverables that you produced during the completion of this assignment.  Please
-see the instructor if you have any questions.
+see the course instructor if you have any questions.
 
 \end{document}
