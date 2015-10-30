@@ -2,11 +2,27 @@
 
 \usepackage[compact]{titlesec}
 
+\usepackage[url=false,
+    backend=biber,
+    style=authoryear,
+    doi=false,
+    isbn=false,
+    backref=false,
+    dashed=false,                                   % Do not add a dash out authors for subsequent articles with the same authors.
+    maxnames=99,                                    % Amount of authors to include before abbreviating.
+    sorting=ydnt]{biblatex}                         % Sorting in reverse order
+\renewbibmacro{in:}{}
+
+\addbibresource{bibliography_schemaanalyst.bib}
+
 \begin{document}
 \MYTITLE{Laboratory Assignment Eight: Understanding and Releasing Real-World Software}
 \MYHEADERS{Laboratory Assignment Eight}{Due: November 13, 2015}
 
 \section*{Introduction}
+
+% Print all publications
+\nocite{*}
 
 Throughout the semester, you have learned about the phases of the software development lifecycle and both the software
 tools and the non-cognitive skills that are needed to support the creation of high-quality software in each of these
@@ -19,6 +35,8 @@ ways to improve the quality of a software system's documentation. Finally, you w
 free and open-source software.
 
 \section*{Learning About SchemaAnalyst}
+
+
 
 \section*{Accessing and Understanding SchemaAnalyst}
 
@@ -45,5 +63,21 @@ This assignment invites your team to submit one printed version of the following
     \item The slides of the presentation that you will give at the start of the next laboratory session
 \end{enumerate}
 \vspace*{-.1in}
+
+% RESEARCH PAPERS:
+\defbibfilter{papers}{
+  type=article or
+  type=inproceedings or
+  type=incollection and
+  not keyword=edit
+}
+\DeclareFieldFormat[article]{volume}{\addcomma\addspace#1\nopunct}
+\DeclareFieldFormat[article]{number}{(#1)}
+\DeclareFieldFormat[inproceedings]{booktitle}{in \em{#1}}
+\DeclareFieldFormat[article]{title}{\mkbibquote{#1\addcomma}}
+\DeclareFieldFormat[inproceedings]{title}{\mkbibquote{#1\addcomma}}
+\DeclareFieldFormat[incollection]{title}{\mkbibquote{#1\addcomma}}
+\printbibliography[filter=papers,title={Publications}]
+
 
 \end{document}
