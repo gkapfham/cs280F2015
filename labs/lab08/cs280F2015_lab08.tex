@@ -44,7 +44,8 @@ either become corrupted with incorrect values or it may reject values that shoul
 The SchemaAnalyst tool, implemented primarily by Phil McMinn and Chris J. Wright, automatically generates test cases
 that help a database designer establish a confidence in the correctness of the relational database's schema. Since the
 creators of SchemaAnalyst want you to help them to release their tool to GitHub, this task is the primary focus of this
-assignment.
+assignment. In particular, you and your team members will compete against the other two teams to be chosen by the
+external customers as the team whose private Git repository of SchemaAnalyst will be make publicly available on GitHub.
 
 After you have organized your teams, you should learn more about the fundamental ideas underlying SchemaAnalyst's
 approach to testing database schemas. You can do this by reading some of the research papers --- listed in the
@@ -60,16 +61,17 @@ if you have questions about any of these papers.
 
 Currently, the source code of SchemaAnalyst is stored in a private Git repository hosted by BitBucket. Your team should
 pick a leader who will then ask the instructor for access to this repository, create a private BitBucket repository for
-your team to complete this project, and then move all of SchemaAnalyst's source code to your team's private repository.
-Please make sure that you share your team's repository with the instructor and both Phil McMinn and Chris J.
-Wright, your external customers for this assignment. In addition, your customers have created a preliminary draft of
-user documentation for SchemaAnalyst and provided this to you in a separate Git repository; please have your team's
-leader ask the instructor for access to this repository and then use this documentation as a start for the {\tt
-README.md} file that will appear on SchemaAnalyst's GitHub page.
+your team to complete this project, and then move all of SchemaAnalyst's source code to your team's private repository;
+the team leader should create a repository that adheres to the naming convention {\tt SchemaAnalyst-<Team Number>}.
+Please make sure that you share your team's repository with the instructor and both Phil McMinn and Chris J.  Wright,
+your external customers for this assignment. In addition, your customers have created a preliminary draft of user
+documentation for SchemaAnalyst and provided this to you in a separate Git repository; please have your team's leader
+ask the instructor for access to this repository and then use this documentation as a start for the {\tt README.md} file
+on SchemaAnalyst's main page.
 
 Next, each member of your team should review the source code of SchemaAnalyst's build system provided in the {\tt
-build.xml} file. Can you learn how to use this system to compile the source code of SchemaAnalyst? While compiling this
-tool, can you find out how many Java classes are inside of SchemaAnalyst? Once you have successfully compiled
+build.xml} file. Can you learn how to use this system to compile the source code of SchemaAnalyst? While compiling with
+{\tt ant}, can you find out how many Java classes are inside of SchemaAnalyst? Once you have successfully compiled
 SchemaAnalyst, you should study the user documentation to learn more about how to run the different parts of this tool.
 Can each member of your team use SchemaAnalyst to generate a test suite for a sample schema of a relational database?
 What are the inputs and outputs of SchemaAnalyst when it generates test data?
@@ -83,11 +85,18 @@ performs a mutation analysis of a test suite? How good are the generated test su
 \vspace*{-.05in}
 \section*{Preparing SchemaAnalyst for Public Release}
 
+You and your team members should review the existing documentation provided by the customers and develop some ideas for
+ways in which you can improve it further. For instance, the current documentation does not show the output that
+SchemaAnalyst produces when you ask it to generate a test suite. In addition, there is no detailed description the
+purpose and behavior of SchemaAnalyst. Of course, the {\tt README.md} that will display on the front page of your Git
+site would benefit from a terminal recording, created with {\tt asciinema}, that demonstrates the key features of the
+tool.
+
 \section*{Evaluating SchemaAnalyst's Design and Implementation}
 
 \section*{Improving the Programming Systems Product}
 
-\section*{Review the Textbook for Key Ideas}
+\section*{Review the Textbooks for Key Ideas}
 
 To best ensure your team's success at completing this project, you should review all of the content in Chapters 1--6 of
 SETP, focusing on Chapter 2's relevant details about the process of developing software. Every member of the team should
