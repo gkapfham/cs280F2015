@@ -29,10 +29,10 @@ tools and the non-cognitive skills that are needed to support the creation of hi
 phases. Yet, none of the past laboratory assignments required you to deliver a programming systems product to an
 external customer. In this laboratory assignment, you will gain experience in working with and understanding a large,
 real-world software system created by an external customer who wants to release it to GitHub under a free and
-open-source license. Additionally, you will use tools, like JDepend and JavaNCSS, to characterize to a large existing
-system. You and your team members will also explore both the issues related to effective technology transfer and the
-ways to improve the quality of a software system's documentation. Finally, you will learn more about the licensing of
-free and open-source software.
+open-source license. Additionally, you will use tools, like JDepend and JavaNCSS, to characterize this large, already
+implemented system. You and your team members will also explore both the issues related to effective technology transfer
+and the ways to improve the quality of a software system's documentation. Finally, you will learn more about the
+licensing of free and open-source software.
 
 \vspace*{-.05in}
 \section*{Learning About SchemaAnalyst}
@@ -42,16 +42,18 @@ used for persisting the program's data. The database itself is protected by a sc
 values that are allowed into the database. If the schema of the database is not correctly defined, then the database may
 either become corrupted with incorrect values or it may reject values that should be allowed into the storage system.
 The SchemaAnalyst tool, implemented primarily by Phil McMinn and Chris J. Wright, automatically generates test cases
-that help a database designer establish a confidence in the correctness of the database.
+that help a database designer establish a confidence in the correctness of the relational database's schema. Since the
+creators of SchemaAnalyst want you to help them to release their tool to GitHub, this task is the primary focus of this
+assignment.
 
-Before organizing your teams and starting to learn more about the fundamental ideas underlying SchemaAnalyst's approach
-to testing database schemas. You can do this by reading some of the research papers --- listed in the ``References''
-section of this assignment --- that McMinn, Wright, and Kapfhammer published about SchemaAnalyst. While it is not
-necessary for you to understand all of the technical and mathematical details in these papers, a familiarity with the
-concepts developed by McMinn and Wright will help your team to successfully complete all of the deliverables required
-for this project. For instance, an understanding of the basics about SchemaAnalyst will allow you to writing good
-introductory content for the tool's {\tt README.md} file on its GitHub site. Please see the instructor if you have
-questions about any of these papers.
+After you have organized your teams, you should learn more about the fundamental ideas underlying SchemaAnalyst's
+approach to testing database schemas. You can do this by reading some of the research papers --- listed in the
+``References'' section of this assignment --- that McMinn, Wright, and Kapfhammer have published about SchemaAnalyst.
+While it is not necessary for you to understand all of the technical and mathematical details in these papers, a
+familiarity with the concepts developed by these authors will help your team to successfully complete all of the
+deliverables required for this project. For instance, an understanding of the basics about SchemaAnalyst will allow you
+to writing good introductory content for the tool's {\tt README.md} file on its GitHub site. Please see the instructor
+if you have questions about any of these papers.
 
 \vspace*{-.05in}
 \section*{Accessing and Using SchemaAnalyst}
@@ -66,18 +68,19 @@ leader ask the instructor for access to this repository and then use this docume
 README.md} file that will appear on SchemaAnalyst's GitHub page.
 
 Next, each member of your team should review the source code of SchemaAnalyst's build system provided in the {\tt
-build.xml} file. Can you learn how to use this system to compile the SchemaAnalyst system? While compiling can you find
-out how many Java classes are inside of SchemaAnalyst? Once you have successfully compiled SchemaAnalyst, you should
-study the user documentation to learn more about how to run the different parts of this tool. Can each member of your
-team use SchemaAnalyst to generate a test suite for a sample schema of a relational database? What are the inputs and
-outputs of SchemaAnalyst when it generates test data?
+build.xml} file. Can you learn how to use this system to compile the source code of SchemaAnalyst? While compiling this
+tool, can you find out how many Java classes are inside of SchemaAnalyst? Once you have successfully compiled
+SchemaAnalyst, you should study the user documentation to learn more about how to run the different parts of this tool.
+Can each member of your team use SchemaAnalyst to generate a test suite for a sample schema of a relational database?
+What are the inputs and outputs of SchemaAnalyst when it generates test data?
 
 Of course, it is also important to characterize the quality of a test suite that SchemaAnalyst automatically generates.
 One way to evaluate tests is to use mutation analysis; please refer to the papers in the ``References'' section to learn
 more about how mutation analysis can help you to understand the quality of a test suite. Can you and your team members
 run the mutation analysis feature provided by SchemaAnalyst? What are the inputs and outputs of SchemaAnalyst when it
-performs a mutation analysis of a test suite?
+performs a mutation analysis of a test suite? How good are the generated test suites?
 
+\vspace*{-.05in}
 \section*{Preparing SchemaAnalyst for Public Release}
 
 \section*{Evaluating SchemaAnalyst's Design and Implementation}
