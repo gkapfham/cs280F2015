@@ -106,13 +106,13 @@ make sure that all of your team members fully understand all of the details abou
 JDepend calculates.  How can your team use these metrics to better understand the quality of SchemaAnalyst's design and
 make suggestions, to the external customers, for ways in which the design of SchemaAnalyst could be improved. As one of
 the deliverables for this assignment, your team should use Markdown to prepare a document that contains formal
-definitions and equations that describe all of the design quality metrics and then comments on the characteristics of
-SchemaAnalyst's design.
+definitions and equations that describe all of the design quality metrics and then comments on the relevant
+characteristics of SchemaAnalyst's design.
 
 It is also important to for your team to calculate metrics that characterize the quality of SchemaAnalyst's
-implementation.  As you know from a previous assignment, JavaNCSS is a software tool that can automatically scan your
-Java source code and report information about the number of non-commented source code statements and the cyclomatic
-complexity.  If you have not already done so, you can learn more about JavaNCSS by visiting
+implementation.  As you know from a previous laboratory assignment, JavaNCSS is a software tool that can automatically
+scan your Java source code and report information about the number of non-commented source code statements and the
+cyclomatic complexity.  If you have not already done so, you can learn more about JavaNCSS by visiting
 \url{http://www.kclee.de/clemens/java/javancss/}. After reading the Web site for JavaNCSS, each member of your team
 should search for papers in the ACM Digital Library, available at \url{http://dl.acm.org/}, that formally describe the
 meaning of the metrics calculated by JavaNCSS, such as cyclomatic complexity. As one of the deliverables for this
@@ -123,14 +123,21 @@ Once all of the members of your team understand the metrics calculated by JavaNC
 tool.  As you did with JDepend, now you must learn how to run JavaNCSS and then apply it to the source code of the
 system implemented by your external customers.  What does the output of JavaNCSS tell you about the quality of
 SchemaAnalyst's implementation? Does SchemaAnalyst exhibit good implementation characteristics? How can you use the
-values of these metrics to better understand and modify the implementation of your Java programs? How much of your
-system's source code is for the program itself? How much of the source code is devoted to the test suite? 
+values of these metrics to better understand and suggest modifications for the implementation of the SchemaAnalyst
+system? How much of SchemaAnalyst's source code is for the program itself? How much of the source code is devoted to the
+test suite?  Overall, how well is SchemaAnalyst documented? What are ways in which your team can improve SchemaAnalyst's
+documentation?
 
-Additionally, your external customers want you to consider assessing the quality of the test suites provided for
-SchemaAnalyst.
+Additionally, your external customers want you to consider assessing the quality of the test suite that they have
+implemented for SchemaAnalyst. For instance, your team can think about using a test coverage analysis tool like JaCoCo
+to calculate the code coverage of SchemaAnalyst's test suite. Alternatively, you could use a tool like MAJOR to perform
+a mutation analysis of SchemaAnalyst's tests; students who want to learn more about MAJOR and the concepts underlying
+mutation analysis are encouraged to read several of the papers in the ``References'' section and to visit MAJOR's Web
+site, available at \url{http://mutation-testing.org/}. Of course, it would be useful to document other characteristics
+of the test suite. For instance, how many tests come with SchemaAnalyst? Do all of the test cases pass?
+Are there tests for all of SchemaAnalyst's packages?
 
-
-\section*{Improving the Programming Systems Product}
+% \section*{Improving the Programming Systems Product}
 
 \section*{Review the Textbooks for Key Ideas}
 
