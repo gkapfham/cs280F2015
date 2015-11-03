@@ -28,11 +28,11 @@ Throughout the semester, you have learned about the phases of the software devel
 tools and the non-cognitive skills that are needed to support the creation of high-quality software in each of these
 phases. Yet, none of the past laboratory assignments required you to deliver a programming systems product to an
 external customer. In this laboratory assignment, you will gain experience in working with and understanding a large,
-real-world software system created by an external customer who wants to release it to GitHub under a free and
-open-source license. Additionally, you will use tools, like JDepend and JavaNCSS, to characterize this large, already
-implemented system. You and your team members will also explore both the issues related to effective technology transfer
-and the ways to improve the quality of a software system's documentation. Finally, you will learn more about the
-licensing of free and open-source software.
+real-world software system created by external customers who want to release it to GitHub under a free and open-source
+license.  Additionally, you will use tools, like JDepend and JavaNCSS, to characterize this large, already implemented
+system. You and your team members will also explore both the issues related to effective technology transfer and the
+ways to improve the quality of a software system's documentation. Finally, you will learn more about the licensing of
+free and open-source software.
 
 \vspace*{-.05in}
 \section*{Learning About SchemaAnalyst}
@@ -40,7 +40,7 @@ licensing of free and open-source software.
 Many real-world software systems interact with a relational database management system (RDBMS) that hosts a database
 used for persisting the program's data. The database itself is protected by a schema that governs the types of data
 values that are allowed into the database. If the schema of the database is not correctly defined, then the database may
-either become corrupted with incorrect values or it may reject values that should be allowed into the storage system.
+either become corrupted with incorrect data or it may reject values that should be allowed into the storage system.
 The SchemaAnalyst tool, implemented primarily by Phil McMinn and Chris J. Wright, automatically generates test cases
 that help a database designer establish a confidence in the correctness of the relational database's schema. Since the
 creators of SchemaAnalyst want you to help them to release their tool to GitHub, this task is the primary focus of this
@@ -80,7 +80,7 @@ Of course, it is also important to characterize the quality of a test suite that
 One way to evaluate tests is to use mutation analysis; please refer to the papers in the ``References'' section to learn
 more about how mutation analysis can help you to understand the quality of a test suite. Can you and your team members
 run the mutation analysis feature provided by SchemaAnalyst? What are the inputs and outputs of SchemaAnalyst when it
-performs a mutation analysis of a test suite? How good are the generated test suites?
+performs a mutation analysis of a test suite? Overall, how good are the generated test suites?
 
 \vspace*{-.05in}
 \section*{Preparing SchemaAnalyst for Public Release}
@@ -90,12 +90,12 @@ ways in which you can improve it further. For instance, the current documentatio
 test suite) that SchemaAnalyst produces when you ask it to generate tests. In addition, there is no detailed description
 of the purpose and behavior of SchemaAnalyst. Of course, the {\tt README.md} that will display on the front page of your
 Git site would also benefit from a terminal recording, created with a tool like {\tt asciinema}, that demonstrates the
-key features of the tool (to learn more about this tool, you can visit \url{https://asciinema.org/}). Finally, since
+system's key features (to learn more about this tool, you can visit \url{https://asciinema.org/}). Finally, since
 SchemaAnalyst contains a commercial library called ``General SQL Parser'' you will need to interact with the external
 customers to determine the best way to publish their tool under an appropriate open-source license. To ensure that your
 team is chosen for the privilege of releasing their version SchemaAnalyst to GitHub, you may also consider other ways in
-which you can prepare the customers' tool for release. Please see the instructor if you have questions about \mbox{this
-task}.
+which you can prepare the customers' tool for release. Please see the instructor if you have questions about \mbox{these
+tasks}.
 
 \section*{Evaluating SchemaAnalyst's Design and Implementation}
 
@@ -103,21 +103,21 @@ In addition to releasing the SchemaAnalyst system, it is important for your team
 First, your team should use a tool called JDepend; as in a previous assignment, you can learn more about JDepend by
 visiting \url{http://clarkware.com/software/JDepend.html}.  Before you start the next phase of this assignment please
 make sure that all of your team members fully understand all of the details about the design quality metrics that
-JDepend calculates.  How can your team use these metrics to better understand the quality of SchemaAnalyst's design and
+JDepend calculates.  Your team can use these metrics to better understand the quality of SchemaAnalyst's design and
 make suggestions, to the external customers, for ways in which the design of SchemaAnalyst could be improved. As one of
 the deliverables for this assignment, your team should use Markdown to prepare a document that contains formal
 definitions and equations that describe all of the design quality metrics and then comments on the relevant
 characteristics of SchemaAnalyst's design.
 
-It is also essential for your team to calculate metrics that characterize the quality of SchemaAnalyst's
-implementation.  As you know from a previous laboratory assignment, JavaNCSS is a software tool that can automatically
-scan your Java source code and report information about the number of non-commented source code statements and the
-cyclomatic complexity.  If you have not already done so, you can learn more about JavaNCSS by visiting
+It is also essential for your team to calculate metrics that characterize the quality of SchemaAnalyst's implementation.
+As you know from a previous laboratory assignment, JavaNCSS is a software tool that can automatically scan your Java
+source code and report information about the number of non-commented source code statements and the cyclomatic
+complexity.  If you have not already done so, you can learn more about JavaNCSS by visiting
 \url{http://www.kclee.de/clemens/java/javancss/}. After reading the Web site for JavaNCSS, each member of your team
 should search for papers in the ACM Digital Library, available at \url{http://dl.acm.org/}, that formally describe the
 meaning of the metrics calculated by JavaNCSS, such as cyclomatic complexity. As one of the deliverables for this
-assignment, your team should use Markdown to write formal definitions and equations that explain all of the metrics
-calculated by JavaNCSS.
+assignment, your team should use Markdown to write formal definitions and equations that fully explain all of the
+metrics calculated by JavaNCSS.
 
 Once all of the members of your team understand the metrics calculated by JavaNCSS, you should download and install this
 tool.  As you did with JDepend, now you must learn how to run JavaNCSS and then apply it to the source code of the
@@ -162,13 +162,19 @@ Although not absolutely required for the successful completion of this laborator
 review SETP's material about software documentation (see Section 10.2) and technology transfer (see Section 14.2).
 Additionally, you may examine Chapter 15 of MMM to learn more about ways in which you can document software. Although
 this optional content in SETP and MMM reinforces concepts already introduced in past class and laboratory sessions, it
-may provide further context to support your release a programming systems product on behalf of an external customer.
+may provide further context to support your release a programming systems product on behalf of the external customers.
 Please see the instructor if you have questions about any of these \mbox{reading assignments}.
 
 \section*{Presentation of Important Insights}
 
 As mentioned previously, the external customers will evaluate the work completed by each of the three teams and decide
-which team has produced the most deliverables of the highest quality.
+which team has produced the most deliverables of the highest quality. To help the customers to decide which team has
+done the best work, you are required to prepare a short ten-minute presentation that will ``sell'' your team's
+deliverables. The presentation slides should highlight the deliverables that you have completed and the ways in which
+you think your work adheres to the highest standards of excellence in software engineering. Overall, your presentation
+must articulate why your efforts will ensure that SchemaAnalyst can be released as a full-featured programming systems
+product. The team chosen by the external customers will be given permission to, in conjunction with the course
+instructor, release SchemaAnalyst to the GitHub site.
 
 \section*{Summary of the Required Deliverables}
 
@@ -190,7 +196,7 @@ This assignment invites your team to submit one printed version of the following
 \end{enumerate}
 \vspace*{-.1in}
 
-\newpage
+% \newpage
 
 \defbibfilter{papers}{
   type=article or
