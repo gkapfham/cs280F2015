@@ -52,23 +52,19 @@ software.
 \section*{Eliciting Requirements from the Customer}
 
 For this final project assignment, your team is tasked with specifying, designing, implementing, documenting, and
-releasing a programming systems product that will give users insights into all of the Git projects in their filesystem.
-For the same of simplicity, this assignment sheet will refer to this product as {\tt van-schedule} because it will
-``retrieve'' the important details about all of the Git repositories that are stored in a user's directories; each team
-is encouraged to develop their own name for their programming systems product that best represents their tool's key
-features.
+releasing a programming systems product that will support the efficient and cost-effective scheduling of a shuttle van
+service provided by the Civic Engagement program at Allegheny.  For the same of simplicity, this assignment sheet will
+refer to this product as {\tt van-schedule} because it will be used by a member of the Civic Engagement staff in
+Allegheny College's Gateway to schedule van trips for students who volunteer off-campus. Each team is encouraged to
+develop their own name for their programming systems product that best represents their tool's key features.
 
-You should interact with the course instructor to learn more about the features that {\tt van-schedule} should provide.
-Additionally, one of your team members should investigate existing tools or online discussion forums that outline the
-features that are common to software tools like {\tt van-schedule}. However, the basic function of the tool will proceed
-in the following manner. When given a root file system directory, {\tt van-schedule} will recursively traverse the
-filesystem and look for all of the directories that contain local or remote Git repositories. After finding a Git
-repository, {\tt van-schedule} will collect and report relevant information about this repository. For instance, your tool
-might report files that have been modified but not yet committed and files that are currently in the directory but
-not tracked by Git. If {\tt van-schedule} finds a Git repository that is ``clean'' and thus has nothing to commit, it
-should also report this information to the user. The {\tt van-schedule} program should also report summary statistics that
-note details about, for instance, how many repositories were found overall and how many files were in the repositories
-but not yet added to Git's records.
+% please see the instructor if you have questions about naming your tool.
+
+In particular, your external customer for this project is Lee Scandinaro, a member of the Allegheny College Gateway who
+is a part of the AmeriCorps VISTA project. You should interact with your customer to learn more about the features that
+{\tt van-schedule} should provide.  Additionally, one of your team members should investigate existing tools or online
+discussion forums that outline the features that are common to software tools like {\tt van-schedule}. However, the
+basic function of the tool will proceed in the following manner.
 
 For this laboratory assignment, all of the students responsible for requirements elicitation and analysis will interact
 with the customer at the same time. In addition, these students may assume, for this assignment, that the customer is a
