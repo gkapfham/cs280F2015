@@ -151,20 +151,4 @@ This assignment invites your team to submit one printed version of the following
 \end{enumerate}
 \vspace*{-.1in}
 
-% \newpage
-
-\defbibfilter{papers}{
-  type=article or
-  type=inproceedings or
-  type=incollection and
-  not keyword=edit
-}
-\DeclareFieldFormat[article]{volume}{\addcomma\addspace#1\nopunct}
-\DeclareFieldFormat[article]{number}{(#1)}
-\DeclareFieldFormat[inproceedings]{booktitle}{in \em{#1}}
-\DeclareFieldFormat[article]{title}{\mkbibquote{#1\addcomma}}
-\DeclareFieldFormat[inproceedings]{title}{\mkbibquote{#1\addcomma}}
-\DeclareFieldFormat[incollection]{title}{\mkbibquote{#1\addcomma}}
-\printbibliography[filter=papers,title={References}]
-
 \end{document}
