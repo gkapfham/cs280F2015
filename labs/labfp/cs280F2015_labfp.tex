@@ -37,44 +37,12 @@ free and open-source software.
 \vspace*{-.05in}
 \section*{Learning About SchemaAnalyst}
 
-Many real-world software systems interact with a relational database management system (RDBMS) that hosts a database
-used for persisting the program's data. The database itself is protected by a schema that governs the types of data
-values that are allowed into the database. If the schema of the database is not correctly defined, then the database may
-either become corrupted with incorrect data or it may reject values that should be allowed into the storage system.
-The SchemaAnalyst tool, implemented primarily by Phil McMinn and Chris J. Wright, automatically generates test cases
-that help a database designer establish a confidence in the correctness of the relational database's schema. Since the
-creators of SchemaAnalyst want you to help them to release their tool to GitHub, this task is the primary focus of this
-assignment. In particular, you and your team members will compete against the other two teams to be chosen by the
-external customers as the team whose private Git repository of SchemaAnalyst will be make publicly available on GitHub.
 
-After you have organized your teams, you should learn more about the fundamental ideas underlying SchemaAnalyst's
-approach to testing database schemas. You can do this by reading some of the research papers --- listed in the
-``References'' section of this assignment --- that McMinn, Wright, and Kapfhammer have published about SchemaAnalyst.
-While it is not necessary for you to understand all of the technical and mathematical details in these papers, a
-familiarity with the concepts developed by these authors will help your team to successfully complete all of the
-deliverables required for this project. For instance, an understanding of the basics about SchemaAnalyst will allow you
-to writing good introductory content for the tool's {\tt README.md} file on its GitHub site. Please see the instructor
-if you have questions about any of these papers.
 
 \vspace*{-.05in}
 \section*{Accessing and Using SchemaAnalyst}
 
-Currently, the source code of SchemaAnalyst is stored in a private Git repository hosted by BitBucket. Your team should
-pick a leader who will then ask the instructor for access to this repository, create a private BitBucket repository for
-your team to complete this project, and then move all of SchemaAnalyst's source code to your team's private repository;
-the team leader should create a repository that adheres to the naming convention {\tt SchemaAnalyst-<Team Number>}.
-Please make sure that you share your team's repository with the instructor and both Phil McMinn and Chris J.  Wright,
-your external customers for this assignment. In addition, your customers have created a preliminary draft of user
-documentation for SchemaAnalyst and provided this to you in a separate Git repository; please have your team's leader
-ask the instructor for access to this repository and then use this documentation as a start for the {\tt README.md} file
-on SchemaAnalyst's main page.
 
-Next, each member of your team should review the source code of SchemaAnalyst's build system provided in the {\tt
-build.xml} file. Can you learn how to use this system to compile the source code of SchemaAnalyst? While compiling with
-{\tt ant}, can you find out how many Java classes are inside of SchemaAnalyst? Once you have successfully compiled
-SchemaAnalyst, you should study the user documentation to learn more about how to run the different parts of this tool.
-Can each member of your team use SchemaAnalyst to generate a test suite for a sample schema of a relational database?
-What are the inputs and outputs of SchemaAnalyst when it generates test data?
 
 Of course, it is also important to characterize the quality of a test suite that SchemaAnalyst automatically generates.
 One way to evaluate tests is to use mutation analysis; please refer to the papers in the ``References'' section to learn
@@ -147,8 +115,6 @@ using a tool like Mermaid, available at \url{https://github.com/knsv/mermaid/}, 
 available in their repository. Finally, your team should prepare an explanation of at least one example of how
 SchemaAnalyst employs object-oriented principles (i.e., polymorphism, inheritance, \mbox{and encapsulation)}.
 
-% \section*{Improving the Programming Systems Product}
-
 \section*{Review the Textbooks for Key Ideas}
 
 To best ensure your team's success at completing this project, you should review all of the content in Chapters 1--6 of
@@ -164,17 +130,6 @@ Additionally, you may examine Chapter 15 of MMM to learn more about ways in whic
 this optional content in SETP and MMM reinforces concepts already introduced in past class and laboratory sessions, it
 may provide further context to support your release a programming systems product on behalf of the external customers.
 Please see the instructor if you have questions about any of these \mbox{reading assignments}.
-
-\section*{Presentation of Important Insights}
-
-As mentioned previously, the external customers will evaluate the work completed by each of the three teams and decide
-which team has produced the most deliverables of the highest quality. To help the customers to decide which team has
-done the best work, you are required to prepare a short ten-minute presentation that will ``sell'' your team's
-deliverables. The presentation slides should highlight the deliverables that you have completed and the ways in which
-you think your work adheres to the highest standards of excellence in software engineering. Overall, your presentation
-must articulate why your efforts will ensure that SchemaAnalyst can be released as a full-featured programming systems
-product. The team chosen by the external customers will be given permission to, in conjunction with the course
-instructor, release SchemaAnalyst to the GitHub site.
 
 \section*{Summary of the Required Deliverables}
 
